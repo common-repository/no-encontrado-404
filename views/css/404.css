@@ -1,0 +1,269 @@
+html{
+	font:400 14px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+	-webkit-text-size-adjust:100%;
+	-ms-text-size-adjust:100%;
+	background:#fff;
+	color:#666;
+	background-image:-webkit-radial-gradient(100% 100%,center,#fff,#fff);
+	background-image:radial-gradient(100% 100% at center,#fff,#fff)
+	overflow-y: scroll;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+body{margin:0}
+body, h1, h2, h3, h4, h5, h6 { 
+	font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+}
+
+.uk-text-center{text-align:center;font-weight:300;}
+.uk-article-title{font-size:56px;line-height:42px;font-weight:300;text-transform:none;}
+.uk-grid{
+	display:-ms-flexbox;
+	display:-webkit-flex;
+	display:flex;
+	-ms-flex-wrap:wrap;
+	-webkit-flex-wrap:wrap;
+	flex-wrap:wrap;
+	margin:0;
+	padding:0;
+	list-style:none
+}
+.uk-width-1-1{width:100%}
+.uk-list{padding:0;margin:0;list-style:none}
+.uk-width-1-2,.uk-width-2-4,.uk-width-3-6,.uk-width-5-10{width:50%}
+
+.tm-middle{ 
+	padding: 10px 0; 
+	background: #fff; 
+}
+
+
+article#buscado {
+	margin: 0 auto;
+	width: 700px; 
+}
+
+
+/* NOMBRE */
+
+#buscado li:first-child {
+	font-size: 29px;
+	font-weight: bold;
+	background-color: gray;
+	color: white;
+	padding: 20px 5px 20px 5px;
+	line-height: 35px;
+}
+
+
+#buscado ul {
+	background-color: rgb(245,245,245);
+	margin-bottom: 0;
+    height: 300px;
+}
+
+#buscado ul li {
+border: medium none;
+padding: 6px;
+margin: 0px;
+font-size: 18px;
+}
+
+#buscado ul li:nth-child(2) {
+margin: 16px 0 0 0;
+}
+
+
+/* BOTON */
+
+#buscado button {
+	height: 40px;
+	width: 100%;
+	padding: 5px;
+	color: #808080;
+	background-color: #F8B727;
+	border: medium none;
+	font-size: 17px;
+	text-transform: uppercase;
+	font-weight: bold;
+	cursor:pointer;
+}
+
+#buscado button:active {
+	top: 1px;
+position: relative;
+}
+
+
+/*IMAGEN NIÑO*/
+
+#imagenChico {
+    height: 340px;
+    width: 100%;
+    background-position: center;
+    background-color: grey;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+
+/* Sobre escribir UK PANEL BOX */
+#buscado .uk-panel-box {
+	padding: 0px;
+	background: white;
+	color: #666;
+	border:none;
+	border-radius: none;
+
+
+}
+
+/*
+REDES SOCIALES */
+
+.iconoSocial {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-size: 60% 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+    position: relative;
+    bottom: -290px;
+}
+
+.iconoSocial:hover {
+	background-size: 80% 80%;
+}
+
+.iconoSocial {
+	transition: background-size 0.2s ease-in;
+	-moz-transition: background-size 0.2s ease-in;
+	-ms-transition: background-size 0.2s ease-in;
+	-o-transition: background-size 0.2s ease-in;
+	-webkit-transition: background-size 0.2s ease-in;
+}
+
+#facebook.iconoSocial {background-image: url("../img/Social-FB.png");}
+#twitter.iconoSocial {background-image: url("../img/Social-TW.png");}
+
+
+/* TITULOS */
+
+#buscado h1 {
+	line-height: 35px;
+	font-weight: bold;
+	color: #000000;
+	margin: 10px 0px 20px 0px;
+}
+
+#buscado h2 {
+	color: #808080;
+	font-size: 28px;
+    margin: 10px 0 20px 0;
+}
+
+#buscado h3 {
+	font-size: 22px;
+	color: #808080;
+	text-decoration: none;
+	line-height: 30px;
+	margin: 7px 0px 5px 0px;
+}
+
+#buscado h3 a{
+	color: blue;
+	text-decoration: none;
+}
+
+#buscado h3 span{
+font-weight: bold;
+}
+
+/*PIE DE PAGINA */
+
+ #contenedorLogos {
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+}
+
+#buscado .logoBrand {
+    height: 110px;
+    width: 160px;
+    /*margin: 0px 15px 60px 0px;*/
+    /* position: relative; */
+    display: inline-block;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+#missingLogo {
+	background: url("../img/mc.jpg");
+}
+
+#noEncontradoLogo {
+	background: url("../img/ne.png");
+}
+
+#buscado .banner{
+	height: 250px;
+    width: 320px;
+    margin-top: 10px;
+	display: inline-block;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+#bannertest{
+	background-image: url("//static.noencontrado.org/banner/banner1.jpg");
+}
+
+
+/* MEDIA QUERY */
+
+
+@media screen 
+  and (max-width: 700px) { 
+	
+	article#buscado {
+	margin: 0 auto;
+	width: 100%;
+	}
+
+	#buscado ul li {
+		padding: 10px 16px 0 16px;
+		font-size: 28px;
+	}
+
+	#buscado li:nth-child(2) {
+	    padding-top: 10px;
+	}
+}
+
+@media screen 
+  and (max-width: 500px) { 
+
+	article .uk-width-1-2 {
+	margin: 0 auto;
+	width: 100%;
+	}
+	#buscado .uk-panel-box {
+		padding: 0;
+	}
+}
+
+@media screen 
+  and (max-width: 350px) { 
+
+	#buscado h1 {
+		font-size: 50px;
+	}
+
+
+	#buscado .logoBrand {
+	width: 140px;
+	}
+
+}
+
